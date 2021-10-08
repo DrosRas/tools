@@ -1,0 +1,28 @@
+PASSWORD SNIFFER PSEUDO CODE:
+
+import scapy ,urlib,re #libraries
+
+set iface to eth0 (your broadcast)
+
+function to get credentials get_login_pass(body)
+	user=none
+	password=none
+	define list of userfields strings
+	define list of passfields strings
+ for loop for userfield
+	using regex library re.search we search the body wich is the captured packet.
+	store what is found
+ for loop for passfield
+	using regex libravy re.search we do the same 
+	store what is found.
+ if user and password not none 
+     return user password
+
+function to filter packets and get body
+  if packet haslayer tcp 
+  store in body
+  username and password = get_login_pass(body)
+   if username and password != none 
+print using parse.unquote (username and pass[0])
+print using parse.unquote (username and pass[1])
+exit(0)

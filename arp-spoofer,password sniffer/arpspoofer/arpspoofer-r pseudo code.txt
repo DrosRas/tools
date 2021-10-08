@@ -1,0 +1,24 @@
+PSEUDOCODE FOR ARP SPOOFER:
+
+import libraries scapy,sys,time
+
+str(sys.arg[1]) #takes arguement when running the program
+str(sys.arg[2])
+
+use get_mac_address(of arguement1) #function we will create
+use get_mac_address(of arguement1)
+print mac adresses
+
+try :
+	while true #infinite loop
+spoof function
+	except : keygoardinterrupt
+
+get_mac+address() function
+	set broadcast layer
+	create arp packet with scapy.ARP()
+	save answer to variable answer
+	return answer .
+spoof() function
+	send disguised arp packet to target
+	send disguised arp packet to router
