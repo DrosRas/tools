@@ -1,0 +1,15 @@
+
+what we need to do
+establish a connection with a machine
+establish a connection with a specific port
+if we manage to connect the port is open if not its closed.
+socket library allows us to establish a connection through the interned
+Ask the user to input an ip address and a port or a port range
+with the given information we try to connect with the socket library tools
+if we connect we can print out the open ports 
+if we dont we print out there are no open ports
+we can create a function that scans a port
+then for a given range of ports run the function
+convert a domain name given to an ip address we do this with the ip library and socket library so the user can enter either
+then we can modify our program to scan multiple targets in another function
+finaly we can try getting a 'banner' from the ports that are open to get more information on what they are running,we do that with another function.
